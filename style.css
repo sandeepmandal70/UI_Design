@@ -1,0 +1,89 @@
+:root {
+      --font-color: rgb(180, 170, 170);
+      --icon-color: #42aed0;
+      --bcg-color:#202430;
+      --main-padding: 15px;
+    }
+
+    body {
+        
+         background-size:cover;
+      color: rgb(180, 170, 170);
+      font-family: 'Cabin', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color: var(--font-color);
+    }
+    .login-container-outer{
+      margin: auto;
+      background-color:#202430;
+      width: 45%;
+    }
+    .login-container-inner{
+      padding: 3% 0% 5% 0%;
+    }
+    .txt-box {
+      height: 3em;
+      color: white;
+      width: 20em;
+      font-size: 20px;
+      background-color: transparent;
+      border-right: 0px;
+      border-top: 0px;
+      border-left: 0px;
+      border-bottom: solid 0px var(--font-color);
+      outline: none;
+      padding-left: 2%;
+      /* border: solid 0px 0px 10px 0px red; */
+    }
+
+    .txt-area {
+      margin: 5% 0% 5% 0%;
+    }
+
+    input[type="text"]::placeholder {
+      color: rgb(180, 170, 170);
+    }
+
+    .login-btn {
+      height: 3em;
+      background-color: var(--icon-color);
+      color: white;
+      width: 81%;
+      font-size: 20px;
+      outline: none;
+      border: none;
+    }
+
+    .reg-btn {
+      height: 3em;
+      background-color: transparent;
+      color: white;
+      width: 81%;
+      font-size: 20px;
+      /* outline: none; */
+      border: 2px solid rgb(180, 170, 170);
+    }
+
+    .g {
+      color: var(--icon-color);
+      font-size: 25px;
+    }
+    .glyphicon{
+        color: var(--icon-color);
+    }
+    hr {
+      width: 81%;
+      margin: 0;
+    }
+
+    .fa {
+      font-size: 70px;
+      margin: 2%;
+    }
+    .bank-name {
+        margin-left: 3%;
+        color: white;
+        font-size: 8em;
+    }

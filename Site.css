@@ -1,0 +1,346 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+:root {
+    --font-color: rgb(180, 170, 170);
+    --icon-color: #42aed0;
+    --main-padding: 15px;
+  }
+
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-attachment:fixed;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+/*opening text*/
+.opening-text-div{
+    text-align: center;
+    margin-top:10%;
+    position: relative;
+}
+.opening-text{
+    font-family:Georgia;
+    font-style:oblique;
+    color:white;
+    font-size:4.5em;
+}
+#smile{
+    font-size:3vw;
+    padding-left:0%;
+    color:white;
+}
+
+.MainJumbotron {
+     background:linear-gradient(  rgba(32, 36, 48, 0.871),rgba(66, 174, 208, 0.534)),
+         url('image.jpg');
+    background-position:center;
+    background-size:cover;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-top: 5%;
+    height: 99vh;
+    width: 99vw;
+}
+.second-div{
+   position:absolute;
+   top:65%;
+   left:15%;
+   background-color:none;
+   height:30vh;
+   width:70vw;
+    
+}
+
+.work-show{
+    position:absolute;
+    height:160px;
+    width:250px;;
+    color:white;
+    box-shadow:0px 24px 11px -19px rgba(128, 128, 128, 0.44);
+    background-color:rgba(189, 83, 39,0.9);
+    transition:300ms;
+}
+.work-show:hover{
+    box-shadow:0px 28px 11px -19px rgba(81, 79, 79, 0.79);
+    transform:translate(0px,-10px);
+}
+.circle{
+    height:12vw;
+    width:12vw;
+    background-color:red;
+    border-radius:6vw 6vw;
+    margin-left:48%;
+    background-color:springgreen;
+}
+.thickline{
+    height:10px;
+    width:50px;
+    background-color:red;
+}
+.hr1{
+    width:60vw;
+    box-shadow:1px 0px 19px 6px #5e655e;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.order-placed{
+    font-size:8vh;
+    margin-left:40%;
+}
+
+.we-do-text{
+    text-align:center;
+    font-size:100%;
+}
+/*for ordering section*/
+.btn-position{
+    margin-left:16%;
+    height:15vh;
+    width:25vw;
+}
+
+/*For NAVBAR DESIGN*/
+.navMystyle{
+    background-color:transparent;
+    color:white;
+    border-bottom:none;
+    font-size: 1.5em;
+}
+.navbar-inverse .navbar-nav>li>a{
+    color:white;
+    border: none;
+    
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    
+    color:var(--font-color);
+    background-color:transparent;
+    border-bottom:2px solid var(--icon-color);
+    /* border-radius:6px; */
+    background: #4649468a;
+    transition-duration: 800ms;
+    /* animation-name: likeme; */
+    animation-duration: 2s;
+    /* @keyframes likeme {
+        0% {}
+    } */
+
+}
+
+/*gallery1*/
+.gallery{
+    background-color:none;
+    padding-top:2%;
+}
+.container2 {
+  position: relative;
+  width: 111%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 110%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color:rgba(81, 79, 79, 0.50);
+  overflow:hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container2:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*gallery 2*/
+.gallery{
+    position:relative;
+    height:100vh;
+    width:100vw;
+}
+.gallery2{
+    width:99vw;
+    height:45vh;
+    padding-left:2vw;
+    margin-left:0%;
+    background-color:#c4d4e4;
+}
+.bottom-card{
+	position: relative;
+	background-color:#ffffff;
+	height: 180px;
+	width:300px;
+	margin-top: 10%;
+	margin-left: 10%;
+	box-shadow: 0px 4px 16px 1px;
+	border-radius: 10px;
+}
+.img-upper{
+    height: 130px;
+    width: 250px;
+    box-shadow: 1px 3px 6px 0px;
+    border-radius: 10px;
+}
+.upper-card {
+    position: absolute;
+    background-color: none;
+    margin-left: 8%;
+    margin-top: -10%;
+    display: block;
+    box-shadow: 1px 3px 6px 0px;
+    border-radius: 10px;
+}
+.card-text{
+	position: absolute;
+	top:80%;
+	left: 42%;
+	font-family:"Arial";
+}
+.bottom-card:hover .upper-card{
+	transition: 900ms;
+	transform: translate(0px,-10px);
+	box-shadow: 1px 5px 6px 0px;
+}
+.hr-strip{
+    position:relative;
+    top:70%;
+    width:90%;
+    border:1px solid black;
+}
+  .text-top{
+      text-align:center;
+      background-color:rgba(64, 199, 162, 0.87);
+      padding-top:6%;
+      height:120px;
+      width:100%;
+  }
+
+  .me-hr{
+      margin:0px 0px 0px 0px;
+  }
+  .order-button{
+    background-color: #175184e6;
+    position: relative;
+    left: 35%;
+    top:10%;
+    bottom:18px;
+    height: 47px;
+    width: 136px;
+    border: none;
+    border-radius: 6px;
+  }
+
+
+
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 720px) {
+
+
+    .opening-text {
+        margin-left: -39%;
+        padding-top: 15%;
+        font-size: 9vw;
+        margin-top: 3%;
+    }
+
+    #smile {
+        font-size: 7vw;
+    }
+
+    .MainJumbotron {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .second-div {
+        position: absolute;
+        width: 100vw;
+        margin-left: -15%;
+        top: 60%;
+    }
+
+    .work-show {
+        visibility: visible;
+        height: 9vh;
+        width: 90vw;
+        margin: 5vw;
+        margin-left: 1%;
+        position: relative;
+    }
+
+    .mob-glyph {
+        padding: 0px;
+        color: #eeeeee;
+        margin: 0px;
+        font-size: 5vh;
+        margin-top: -12px;
+    }
+
+    .work-show > hr {
+        visibility: hidden;
+    }
+
+    .we-do-text {
+        color: white;
+        margin-top: -69px;
+        padding: 0px;
+        font-size: 125%;
+    }
+
+    /*gallery2*/
+
+    
+    .bottom-card{
+        margin-top: 8vh;
+        margin-left: 2vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
